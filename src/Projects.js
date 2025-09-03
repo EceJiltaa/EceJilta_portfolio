@@ -7,41 +7,41 @@ function Projects() {
       title: "Portfolyom",
       desc: "Kendi kişisel portfolyo sitem. React ile geliştirildi.",
       tech: ["React", "CSS", "HTML"],
-      img: "/Portfolyo.png",
+      img: process.env.PUBLIC_URL + "/Portfolyo.png",
       link: "https://github.com/EceJiltaa/EceJilta_portfolio.git"
     },
     {
       title: "I'Chef Pizza",
       desc: "Bir pizza restoranının web sitesi",
       tech: ["HTML", "CSS", "JavaScript"],
-      img: "/IchefWeb.png",
+      img: process.env.PUBLIC_URL + "/IchefWeb.png",
       link: "https://ichefpizza.com/ichefpizza/"
     },
     {
       title: "Banka Otomasyonu",
       desc: "Görsel Programlama dersi projesi olarak yapılmıştır.",
       tech: ["C#"],
-      img: "/bankaoto.png",
+      img: process.env.PUBLIC_URL + "/bankaoto.png",
       link: "https://github.com/EceJiltaa/Bank_Automation.git"
     },
     {
       title: "Pansiyon Kayıt Otomasyonu",
       desc: "Ödev amaçlı hazırlanmıştır.",
       tech: ["MySQL", "UML Diyagramı"],
-      img: "/pansiyonKayitUMLDiyagrami.png",
+      img: process.env.PUBLIC_URL + "/pansiyonKayitUMLDiyagrami.png",
     },
     {
       title: "Temassız Kalp Atış Hızı Ölçme (Bitirme Projesi)",
       desc: "Görüntü işleme ile Python kullanılarak geliştirildi.",
       tech: ["Python", "OpenCV"],
-      img: "/ecebitirme.png",
+      img: process.env.PUBLIC_URL + "/ecebitirme.png",
       link: "https://github.com/EceJiltaa/Bitirme-Projesi---Temassiz-Kalp-Atis-Hizi-Olcme.git"
     },
     {
       title: "Diyetisyen Otomasyonu",
       desc: "Veri yapıları dersine uygun olarak ağaç, grafik, bağlantılı liste gibi veri yapıları kullanılarak hazırlanmıştır.",
       tech: ["C"],
-      img: "/diyetisyenoto.png",
+      img: process.env.PUBLIC_URL + "/diyetisyenoto.png",
       link: "https://github.com/EceJiltaa/Dietitian-Automation.git"
     },
     {

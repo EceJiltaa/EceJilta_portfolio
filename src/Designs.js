@@ -5,14 +5,14 @@ function Designs() {
   const [selected, setSelected] = useState(null);
 
   const designProjects = [
-    { title: "Logo Tasarımı", type: "image", src: "/PanbenLogo.png", description: "Çanta markasının logosu." },
-    { title: "Logo Tasarımı", type: "image", src: "/DenemeLogo.png", description: "" },
-    {title: "Instagram Post", type: "image", src: "/fallCollection.png", description: ""},
-    {title: "Instagram Post", type: "image", src: "/crochetsale.png", description: ""},
-    { title: "Poster Tasarımı", type: "image", src: "/etkinlikk.png", description: "Etkinlik posteri tasarımı." },
-    {title: "Poster Tasarımı", type: "image", src: "/etkinlik2.png", description: "Etkinlik posteri tasarımı."},
-    { title: "Tasarım Videosu", type: "video", src: "/video1.mp4", description: "" },
-    { title: "Instagram Post", type: "image", src: "/PanbenPost.png", description: "" },
+    { title: "Logo Tasarımı", type: "image", src: process.env.PUBLIC_URL + "/PanbenLogo.png", description: "Çanta markasının logosu." },
+    { title: "Logo Tasarımı", type: "image", src: process.env.PUBLIC_URL + "/DenemeLogo.png", description: "" },
+    {title: "Instagram Post", type: "image", src: process.env.PUBLIC_URL + "/fallCollection.png", description: ""},
+    {title: "Instagram Post", type: "image", src: process.env.PUBLIC_URL + "/crochetsale.png", description: ""},
+    { title: "Poster Tasarımı", type: "image", src: process.env.PUBLIC_URL + "/etkinlikk.png", description: "Etkinlik posteri tasarımı." },
+    {title: "Poster Tasarımı", type: "image", src: process.env.PUBLIC_URL + "/etkinlik2.png", description: "Etkinlik posteri tasarımı."},
+    { title: "Tasarım Videosu", type: "video", src: process.env.PUBLIC_URL + "/video1.mp4", description: "" },
+    { title: "Instagram Post", type: "image", src: process.env.PUBLIC_URL + "/PanbenPost.png", description: "" },
     
   ];
 

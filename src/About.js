@@ -6,7 +6,7 @@ function About() {
     <div className="about-section">
       <div className="about-container">
         <div className="about-image">
-          <img src="/EceJilta.jpg" alt="EceJilta" />
+          <img src={'${process.env.PUBLIC_URL}/EceJilta.jpg'} alt="EceJilta" />
         </div>
         <div className="about-text">
           <h2>Merhaba, ben Ece </h2>

@@ -6,12 +6,12 @@ import Contact from './Contact';
 import Designs from './Designs';
 import Certificates from './Certificates';
 import Articles from './Articles';
-
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+    
   };
 
   return (
