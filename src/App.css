@@ -1,0 +1,127 @@
+@import './index.css';
+
+/* App container */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  background: linear-gradient(to bottom, #f7f7f7, #ffffff);
+  font-family: 'Inter', sans-serif;
+}
+.header, .footer {
+  background-color: #f0f0f0; /* Beyazdan biraz gri ton */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Daha belirgin gölge */
+}
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  padding: 25px 20px; /* önce 20px idi, biraz artırdık */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.header h1 {
+  font-size: 1.8rem; /* daha büyük ve okunaklı */
+  margin: 0;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.2; /* üst-alt boşluğu dengeler */
+}
+
+.nav-links a {
+  margin-left: 22px;
+  color: var(--text);
+  font-weight: 600;
+  transition: color .18s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s;
+}
+
+/* Nav */
+.header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header nav a:hover {
+  color: #007bff;
+}
+
+/* Main spacing */
+main {
+  flex: 1;
+  padding: 48px 0;
+}
+
+/* Footer */
+.footer {
+  background-color: #111827;
+  color: #d1d5db;
+  text-align: center;
+  padding: 20px 0;
+  font-size: .9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    padding: 14px 18px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links { margin-top: 12px; }
+  .nav-links a { display: block; margin: 8px 0 0 0; }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .header nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #fff;
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .header nav.open {
+    max-height: 200px; /* Menü açıkken yüksekliği */
+  }
+
+  .header nav a {
+    margin: 15px;
+  }
+}

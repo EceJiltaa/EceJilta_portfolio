@@ -1,0 +1,68 @@
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+:root{
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --text: #1f2937;      /* koyu gri */
+  --muted: #6b7280;     /* ikincil metin */
+  --primary: #1a1a40;   /* deep navy */
+  --accent: #ff6b35;    /* turuncu vurgu */
+  --accent-2: #4caf50;  /* yeşil (önceki vurgular için) */
+  --shadow: 0 6px 18px rgba(15,23,42,0.08);
+  --radius: 12px;
+  --container-width: 1100px;
+}
+
+* { box-sizing: border-box; }
+
+html,body,#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text);
+  background: linear-gradient(180deg, #fbfdff 0%, var(--bg) 100%);
+  line-height: 1.5;
+}
+
+/* Genel container (kullanırsan) */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Başlıklar */
+h1, h2, h3 {
+  font-family: 'Poppins', Inter, sans-serif;
+  color: var(--primary);
+  margin: 0 0 12px 0;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
+/* Linkler */
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Buton ortak sınıf */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+/* küçük yardımcı metin */
+.small { font-size: .9rem; color: var(--muted); }

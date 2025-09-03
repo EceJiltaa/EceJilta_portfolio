@@ -1,0 +1,78 @@
+/* Certificates.css */
+.certificates {
+  text-align: center;
+  padding: 24px 0 48px 0;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.certificate-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 12px;
+  box-shadow: var(--shadow);
+  transition: transform .22s ease, box-shadow .22s ease;
+  cursor: pointer;
+  text-align: center; /* burayı left yerine center yaptık */
+}
+
+.certificate-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(15,23,42,0.09);
+}
+
+.certificate-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain; /* kesilmeden göster */
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #fbfdff;
+}
+
+.certificate-card h3 { 
+  font-size: 1.02rem; 
+  margin-bottom: 6px; 
+  color: var(--primary); 
+}
+
+.certificate-card p { 
+  color: var(--muted); 
+  font-size: .95rem; 
+}
+
+.certificate-card span { 
+  color: #94a3b8; 
+  font-size: .85rem; 
+}
+
+/* Modal (büyütülmüş görsel) */
+.modal {
+  position: fixed;
+  inset: 0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: rgba(5,10,20,0.75);
+  z-index: 1300;
+}
+
+.modal-content {
+  max-width: 92%;
+  max-height: 92%;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .certificate-card img { height: 150px; }
+}
