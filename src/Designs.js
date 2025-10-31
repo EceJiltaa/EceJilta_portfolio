@@ -5,6 +5,8 @@ function Designs() {
   const [selected, setSelected] = useState(null);
 
   const designProjects = [
+    {title: "Instagram Post", type: "image", src: process.env.PUBLIC_URL + "/pizzaoclock.png", description: ""},
+    {title: "Instagram Post", type: "image", src: process.env.PUBLIC_URL + "/flowerbag.png", description: ""},
     { title: "Logo Tasarımı", type: "image", src: process.env.PUBLIC_URL + "/PanbenLogo.png", description: "Çanta markasının logosu." },
     { title: "Logo Tasarımı", type: "image", src: process.env.PUBLIC_URL + "/DenemeLogo.png", description: "" },
     {title: "Instagram Post", type: "image", src: process.env.PUBLIC_URL + "/fallCollection.png", description: ""},

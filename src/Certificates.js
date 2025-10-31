@@ -6,6 +6,24 @@ function Certificates() {
 
   const certificates = [
     {
+      title: "Robotic Process Automation",
+      description: "Doğuş Teknoloji şirketi eğitimi.",
+      year: "2025",
+      image: process.env.PUBLIC_URL+'',
+    },
+    {
+      title: "Agile 101",
+      description: "Softtech tarafından düzenlenen bir çalışma prensibi eğitimi.",
+      year: "2025",
+      image: process.env.PUBLIC_URL+'/Agile101_KatilimSertifikasi.png',
+    },
+    {
+      title: "Panel Konuşması",
+      description: "Teknolojik Gelişmeler ve Kadın Mühendislerin Rolü",
+      year: "2024",
+      image: process.env.PUBLIC_URL+'/panel.jpg',
+    },
+    {
       title: "İngilizce B1 - B1+ Sertifikası",
       description: "",
       year: "2019",
@@ -16,18 +34,6 @@ function Certificates() {
       description: "",
       year: "2019",
       image: process.env.PUBLIC_URL+'/CareerDevelopment.png',
-    },
-    {
-      title: "Panel Konuşması",
-      description: "Teknolojik Gelişmeler ve Kadın Mühendislerin Rolü",
-      year: "2024",
-      image: process.env.PUBLIC_URL+'/panel.jpg',
-    },
-    {
-      title: "Agile 101",
-      description: "Softtech tarafından düzenlenen bir çalışma prensibi eğitimi.",
-      year: "2025",
-      image: process.env.PUBLIC_URL+'/Agile101_KatilimSertifikasi.png',
     }
   ];
 

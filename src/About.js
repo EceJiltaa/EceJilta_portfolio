@@ -33,8 +33,8 @@ function About() {
 
           {/* Buraya CV indir butonu eklendi */}
           <a 
-            href="/EceJilta_cv.pdf" 
-            download="EceJilta_cv.pdf" 
+            href={process.env.PUBLIC_URL + "/EceJilta_CV_TR.pdf"} 
+            download="EceJilta_CV_TR.pdf" 
             className="cv-button"
           >
             CV’mi İndir

@@ -3,23 +3,25 @@ import './Articles.css';
 
 function Articles() {
   const articles = [
-    {
-        title: "Bitirme Projesi - Temassız Kalp Atış Hızı Ölçme",
-        file: "/BitirmeProjesi.pdf"
-    },
-    {
-        title: "Web Tabanlı Saldırıları Önleme Sistemi",
-        file: "/WebTabanliSaldirilariOnlemeSistemi.pdf"
-    },
-    {
-        title: "Sorting Algorithms: Quick Sort & Insertion Sort  ",
-        file: "/SortingAlgorithmsQuickSortInsertionSort.pdf"
-    },
-    {
-        title: "Rootkit Saldırısı Tespiti ve Önlemi",
-        file: "/RootkitSaldirisiTespitveOnlem.pdf"
-    }
-  ];
+  {
+    title: "Bitirme Projesi - Temassız Kalp Atış Hızı Ölçme",
+    file: process.env.PUBLIC_URL + "/BitirmeProjesi.pdf"
+  },
+  {
+    title: "Web Tabanlı Saldırıları Önleme Sistemi",
+    file: process.env.PUBLIC_URL + "/WebTabanliSaldirilariOnlemeSistemi.pdf"
+  },
+  {
+    title: "Sorting Algorithms: Quick Sort & Insertion Sort",
+    file: process.env.PUBLIC_URL + "/SortingAlgorithmsQuickSortInsertionSort.pdf"
+  },
+  {
+    title: "Rootkit Saldırısı Tespiti ve Önlemi",
+    file: process.env.PUBLIC_URL + "/RootkitSaldirisiTespitveOnlem.pdf"
+  }
+];
+
+
 
   return (
     <div className="articles">
