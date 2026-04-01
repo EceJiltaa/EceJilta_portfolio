@@ -1,42 +1,45 @@
 import React from 'react';
 import './Articles.css';
+import { useTranslation } from 'react-i18next';
 
 function Articles() {
+  const { t } = useTranslation();
+
   const articles = [
-  {
-    title: "Bitirme Projesi - Temassız Kalp Atış Hızı Ölçme",
-    file: process.env.PUBLIC_URL + "/BitirmeProjesi.pdf"
-  },
-  {
-    title: "Web Tabanlı Saldırıları Önleme Sistemi",
-    file: process.env.PUBLIC_URL + "/WebTabanliSaldirilariOnlemeSistemi.pdf"
-  },
-  {
-    title: "Sorting Algorithms: Quick Sort & Insertion Sort",
-    file: process.env.PUBLIC_URL + "/SortingAlgorithmsQuickSortInsertionSort.pdf"
-  },
-  {
-    title: "Rootkit Saldırısı Tespiti ve Önlemi",
-    file: process.env.PUBLIC_URL + "/RootkitSaldirisiTespitveOnlem.pdf"
-  }
-];
-
-
+    {
+      title: t("articles.items.bitirme.title"),
+      file: process.env.PUBLIC_URL + "/BitirmeProjesi.pdf"
+    },
+    {
+      title: t("articles.items.saldiri.title"),
+      file: process.env.PUBLIC_URL + "/WebTabanliSaldirilariOnlemeSistemi.pdf"
+    },
+    {
+      title: t("articles.items.sorting.title"),
+      file: process.env.PUBLIC_URL + "/SortingAlgorithmsQuickSortInsertionSort.pdf"
+    },
+    {
+      title: t("articles.items.rootkit.title"),
+      file: process.env.PUBLIC_URL + "/RootkitSaldirisiTespitveOnlem.pdf"
+    }
+  ];
 
   return (
     <div className="articles">
-      <h2>Raporlar / Makaleler</h2>
+      <h2>{t("articles.title")}</h2>
+
       <ul>
         {articles.map((article, index) => (
           <li key={index} className="article-item">
             <span className="article-title">{article.title}</span>
+
             <a
               href={article.file}
               target="_blank"
               rel="noopener noreferrer"
               className="article-button"
             >
-              Dosyayı Aç
+              {t("articles.button")}
             </a>
           </li>
         ))}

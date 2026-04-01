@@ -1,0 +1,132 @@
+{
+  "title": "Ece Jılta | Portfolio",
+  "menu": {
+    "about": "About",
+    "projects": "Projects",
+    "certificates": "Certificates",
+    "articles": "Articles",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "Hi, I'm Ece",
+    "university": "Bursa Uludağ University - Computer Engineering",
+    "description1": "I am passionate about web development and design. I build user-focused projects by following modern technologies. I continue to improve myself in React, JavaScript, HTML, and CSS. I also actively create designs on Canva.",
+    "description2": "I am a curious developer who is open to learning and can quickly adapt to new technologies.",
+    "skillsTitle": "Technologies I Know:",
+    "downloadCV": "Download CV"
+  },
+  "projects": {
+    "title": "My Projects",
+    "technologies": "Technologies",
+    "view": "View",
+    "items": {
+      "portfolio": {
+        "title": "My Portfolio",
+        "desc": "My personal portfolio website built with React."
+      },
+      "pizza": {
+        "title": "I'Chef Pizza",
+        "desc": "A pizza restaurant website"
+      },
+      "bank": {
+        "title": "Bank Automation",
+        "desc": "Created as a visual programming course project."
+      }
+    }
+  },
+  "designs": {
+    "title": "My Design Projects",
+    "items": {
+        "pizza": {
+        "title": "Instagram Post"
+        },
+        "flower": {
+        "title": "Instagram Post"
+        },
+        "panbenLogo": {
+        "title": "Logo Design",
+        "desc": "Logo for a bag brand."
+        },
+        "denemeLogo": {
+        "title": "Logo Design"
+        },
+        "fall": {
+        "title": "Instagram Post"
+        },
+        "crochet": {
+        "title": "Instagram Post"
+        },
+        "poster1": {
+        "title": "Poster Design",
+        "desc": "Event poster design."
+        },
+        "poster2": {
+        "title": "Poster Design",
+        "desc": "Event poster design."
+        },
+        "video": {
+        "title": "Design Video"
+        },
+        "panbenPost": {
+        "title": "Instagram Post"
+        },
+        "korean":{
+        "title": "Product Promotion"
+        }
+   }
+  },
+  "certificates": {
+    "title": "Education & Certificates",
+    "items": {
+        "data":{
+            "title": "Data Analysis",
+            "desc": "Doğuş Technology training."
+        },
+        "cyber":{
+            "title": "Cyber ​​Security",
+            "desc": "Doğuş Technology training."
+        },
+        "rpa": {
+            "title": "Robotic Process Automation",
+            "desc": "Doğuş Technology training."
+        },
+        "agile": {
+            "title": "Agile 101",
+            "desc": "A methodology training by Softtech."
+        },
+        "panel": {
+            "title": "Panel Talk",
+            "desc": "Technological Developments and Women in Engineering"
+        },
+        "english": {
+            "title": "English B1 - B1+ Certificate"
+        },
+        "career": {
+            "title": "Career Development Certificate"
+        }
+    }
+  },
+  "articles": {
+    "title": "Reports / Articles",
+    "button": "Open File",
+    "items": {
+        "bitirme": {
+        "title": "Graduation Project - Contactless Heart Rate Measurement"
+        },
+        "saldiri": {
+        "title": "Web-Based Attack Prevention System"
+        },
+        "sorting": {
+        "title": "Sorting Algorithms: Quick Sort & Insertion Sort"
+        },
+        "rootkit": {
+        "title": "Rootkit Attack Detection and Prevention"
+        }
+   }
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "If you want to contact me, you can use the following methods:"
+  },
+  "footer": "© 2025 Ece. All Rights Reserved."
+}

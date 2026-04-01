@@ -1,7 +1,10 @@
 import React from 'react';
 import './About.css';
+import { useTranslation } from 'react-i18next';
 
 function About() {
+  const { t } = useTranslation();
+
   return (
     <div className="about-section">
       <div className="about-container">
@@ -9,15 +12,19 @@ function About() {
           <img src={process.env.PUBLIC_URL+'/EceJilta.jpg'} alt="EceJilta" />
         </div>
         <div className="about-text">
-          <h2>Merhaba, ben Ece </h2>
-          <h3>Bursa Uludağ Üniversitesi - Bilgisayar Mühendisliği </h3>
+          <h2>{t("about.title")}</h2>
+          <h3>{t("about.university")}</h3>
+
           <p>
-            Web geliştirme ve tasarım tutkunu biriyim. Modern teknolojileri takip ederek kullanıcı odaklı projeler üretiyorum. React, JavaScript, HTML ve CSS alanlarında kendimi geliştirmeye devam ediyorum. Ayrıca aktif olarak Canva'da tasarımlar yapıyorum.
+            {t("about.description1")}
           </p>
+
           <p>
-            Öğrenmeye açık, meraklı ve yeni teknolojilere hızlı uyum sağlayabilen bir geliştiriciyim.
+            {t("about.description2")}
           </p>
-          <h4>Bildiğim Teknolojiler:</h4>
+
+          <h4>{t("about.skillsTitle")}</h4>
+
           <ul className="skills">
             <li>💻 HTML</li>
             <li>💻 Python</li>
@@ -31,13 +38,12 @@ function About() {
             <li> 🖹 Microsoft Office </li>
           </ul>
 
-          {/* Buraya CV indir butonu eklendi */}
           <a 
             href={process.env.PUBLIC_URL + "/EceJilta_CV_TR.pdf"} 
             download="EceJilta_CV_TR.pdf" 
             className="cv-button"
           >
-            CV’mi İndir
+            {t("about.downloadCV")}
           </a>
 
           <div className="social-buttons">
@@ -64,6 +70,4 @@ function About() {
   );
 }
 
-
 export default About;
-

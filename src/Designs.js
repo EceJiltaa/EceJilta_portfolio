@@ -1,35 +1,147 @@
 import React, { useState } from 'react';
 import './Designs.css';
+import { useTranslation } from 'react-i18next';
 
 function Designs() {
   const [selected, setSelected] = useState(null);
+  const { t } = useTranslation();
 
   const designProjects = [
-    {title: "Instagram Post", type: "image", src: process.env.PUBLIC_URL + "/pizzaoclock.png", description: ""},
-    {title: "Instagram Post", type: "image", src: process.env.PUBLIC_URL + "/flowerbag.png", description: ""},
-    { title: "Logo Tasarımı", type: "image", src: process.env.PUBLIC_URL + "/PanbenLogo.png", description: "Çanta markasının logosu." },
-    { title: "Logo Tasarımı", type: "image", src: process.env.PUBLIC_URL + "/DenemeLogo.png", description: "" },
-    {title: "Instagram Post", type: "image", src: process.env.PUBLIC_URL + "/fallCollection.png", description: ""},
-    {title: "Instagram Post", type: "image", src: process.env.PUBLIC_URL + "/crochetsale.png", description: ""},
-    { title: "Poster Tasarımı", type: "image", src: process.env.PUBLIC_URL + "/etkinlikk.png", description: "Etkinlik posteri tasarımı." },
-    {title: "Poster Tasarımı", type: "image", src: process.env.PUBLIC_URL + "/etkinlik2.png", description: "Etkinlik posteri tasarımı."},
-    { title: "Tasarım Videosu", type: "video", src: process.env.PUBLIC_URL + "/video1.mp4", description: "" },
-    { title: "Instagram Post", type: "image", src: process.env.PUBLIC_URL + "/PanbenPost.png", description: "" },
-    
+    {
+      title: t("designs.items.pizza.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/pizzaoclock.png",
+      description: ""
+    },
+    {
+      title: t("designs.items.pizza.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/KonkursPune.png",
+      description: ""
+    },
+    {
+      title: t("designs.items.video.title"),
+      type: "video",
+      src: process.env.PUBLIC_URL + "/VisualDesigner.mp4",
+      description: ""
+    },
+    {
+      title: t("designs.items.flower.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/flowerbag.png",
+      description: ""
+    },
+    {
+      title: t("designs.items.pizza.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/pizzaphone.png",
+      description: ""
+    },
+    {
+      title: t("designs.items.video.title"),
+      type: "video",
+      src: process.env.PUBLIC_URL + "/SpicyPizza.mp4",
+      description: ""
+    },
+    {
+      title: t("designs.items.pizza.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/IftarMenu.png",
+      description: ""
+    },
+    {
+      title: t("designs.items.panbenLogo.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/PanbenLogo.png",
+      description: t("designs.items.panbenLogo.desc")
+    },
+    {
+      title: t("designs.items.denemeLogo.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/DenemeLogo.png",
+      description: ""
+    },
+    {
+      title: t("designs.items.fall.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/fallCollection.png",
+      description: ""
+    },
+    {
+      title: t("designs.items.crochet.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/crochetsale.png",
+      description: ""
+    },
+    {
+      title: t("designs.items.poster1.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/etkinlikk.png",
+      description: t("designs.items.poster1.desc")
+    },
+    {
+      title: t("designs.items.poster2.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/etkinlik2.png",
+      description: t("designs.items.poster2.desc")
+    },
+    {
+      title: t("designs.items.video.title"),
+      type: "video",
+      src: process.env.PUBLIC_URL + "/video1.mp4",
+      description: ""
+    },
+    {
+      title: t("designs.items.korean.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/Korean1.png",
+      description: ""
+    },
+    {
+      title: t("designs.items.korean.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/Korean2.png",
+      description: ""
+    },
+    {
+      title: t("designs.items.korean.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/Korean3.png",
+      description: ""
+    },
+    {
+      title: t("designs.items.korean.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/Korean4.png",
+      description: ""
+    },
+    {
+      title: t("designs.items.panbenPost.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/PanbenPost.png",
+      description: ""
+    }
   ];
 
   return (
     <div className="designs">
-      <h2>Tasarım Projelerim</h2>
+      <h2>{t("designs.title")}</h2>
+
       <div className="design-grid">
         {designProjects.map((design, index) => (
-          <div className="design-card" key={index} onClick={() => setSelected(design)}>
+          <div
+            className="design-card"
+            key={index}
+            onClick={() => setSelected(design)}
+          >
             {design.type === "image" ? (
               <img src={design.src} alt={design.title} />
             ) : (
               <video src={design.src} muted loop />
             )}
+
             <h3>{design.title}</h3>
+
             {design.description && <p>{design.description}</p>}
           </div>
         ))}

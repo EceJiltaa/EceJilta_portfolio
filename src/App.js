@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useTranslation } from "react-i18next";
 import './App.css';
 import About from './About';
 import Projects from './Projects';
@@ -8,6 +9,14 @@ import Certificates from './Certificates';
 import Articles from './Articles';
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const savedLang = localStorage.getItem("lang");
+    if (savedLang) {
+      i18n.changeLanguage(savedLang);
+    }
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -17,14 +26,27 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-        <h1>Ece Jılta | Portfolyo</h1>
+        <h1>{t("title")}</h1>
         <nav className={menuOpen ? 'open' : ''}>
-          <a href="#about" onClick={() => setMenuOpen(false)}>Hakkımda</a>
-          <a href="#projects" onClick={() => setMenuOpen(false)}>Projeler</a>
-          <a href="#certificates">Eğitimler</a>
-          <a href="#articles">Raporlar</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)}>İletişim</a>
+          <a href="#about" onClick={() => setMenuOpen(false)}>{t("menu.about")}</a>
+          <a href="#projects" onClick={() => setMenuOpen(false)}>{t("menu.projects")}</a>
+          <a href="#certificates">{t("menu.certificates")}</a>
+          <a href="#articles">{t("menu.articles")}</a>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>{t("menu.contact")}</a>
         </nav>
+
+        <div className="language-switch">
+          <button onClick={() => {
+            i18n.changeLanguage("tr");
+            localStorage.setItem("lang", "tr");
+          }}>TR</button>
+
+          <button onClick={() => {
+            i18n.changeLanguage("en");
+            localStorage.setItem("lang", "en");
+          }}>EN</button>
+        </div>
+
         <div className="hamburger" onClick={toggleMenu}>
           <div className="bar"></div>
           <div className="bar"></div>
@@ -42,7 +64,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        <p>© 2025 Ece. Tüm Hakları Saklıdır.</p>
+        <p>{t("footer")}</p>
       </footer>
     </div>
 

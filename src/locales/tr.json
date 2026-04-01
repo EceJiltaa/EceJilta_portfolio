@@ -1,0 +1,133 @@
+{
+  "title": "Ece Jılta | Portfolyo",
+  "menu": {
+    "about": "Hakkımda",
+    "projects": "Projeler",
+    "certificates": "Eğitimler",
+    "articles": "Raporlar",
+    "contact": "İletişim"
+  },
+  "about": {
+    "title": "Merhaba, ben Ece",
+    "university": "Bursa Uludağ Üniversitesi - Bilgisayar Mühendisliği",
+    "description1": "Web geliştirme ve tasarım tutkunu biriyim. Modern teknolojileri takip ederek kullanıcı odaklı projeler üretiyorum. React, JavaScript, HTML ve CSS alanlarında kendimi geliştirmeye devam ediyorum. Ayrıca aktif olarak Canva'da tasarımlar yapıyorum.",
+    "description2": "Öğrenmeye açık, meraklı ve yeni teknolojilere hızlı uyum sağlayabilen bir geliştiriciyim.",
+    "skillsTitle": "Bildiğim Teknolojiler:",
+    "downloadCV": "CV'mi İndir"
+  },
+  "projects": {
+    "title": "Yazılım Projelerim",
+    "technologies": "Teknolojiler",
+    "view": "İncele",
+    "items": {
+      "portfolio": {
+        "title": "Portfolyom",
+        "desc": "Kendi kişisel portfolyo sitem. React ile geliştirildi."
+      },
+      "pizza": {
+        "title": "I'Chef Pizza",
+        "desc": "Bir pizza restoranının web sitesi"
+      },
+      "bank": {
+        "title": "Banka Otomasyonu",
+        "desc": "Görsel Programlama dersi projesi olarak yapılmıştır."
+      }
+    }
+  },
+  "designs": {
+    "title": "Tasarım Projelerim",
+    "items": {
+        "pizza": {
+        "title": "Instagram Post"
+        },
+        "flower": {
+        "title": "Instagram Post"
+        },
+        "panbenLogo": {
+        "title": "Logo Tasarımı",
+        "desc": "Çanta markasının logosu."
+        },
+        "denemeLogo": {
+        "title": "Logo Tasarımı"
+        },
+        "fall": {
+        "title": "Instagram Post"
+        },
+        "crochet": {
+        "title": "Instagram Post"
+        },
+        "poster1": {
+        "title": "Poster Tasarımı",
+        "desc": "Etkinlik posteri tasarımı."
+        },
+        "poster2": {
+        "title": "Poster Tasarımı",
+        "desc": "Etkinlik posteri tasarımı."
+        },
+        "video": {
+        "title": "Tasarım Videosu"
+        },
+        "panbenPost": {
+        "title": "Instagram Post"
+        },
+        "korean":{
+        "title": "Ürün Tanıtım"
+        }
+   }
+  },
+  "certificates": {
+    "title": "Eğitim ve Sertifikalarım",
+    "items": {
+        "data":{
+            "title": "Veri Analizi",
+            "desc": "Doğuş Teknoloji şirketi eğitimi."
+        },
+        "cyber":{
+            "title": "Siber Güvenlik",
+            "desc": "Doğuş Teknoloji şirketi eğitimi."
+        },
+        "rpa": {
+            "title": "Robotik Süreç Otomasyonu",
+            "desc": "Doğuş Teknoloji şirketi eğitimi."
+        },
+        "agile": {
+            "title": "Agile 101",
+            "desc": "Softtech tarafından düzenlenen bir çalışma prensibi eğitimi."
+        },
+        "panel": {
+            "title": "Panel Konuşması",
+            "desc": "Teknolojik Gelişmeler ve Kadın Mühendislerin Rolü"
+        },
+        "english": {
+            "title": "İngilizce B1 - B1+ Sertifikası"
+        },
+        "career": {
+            "title": "Career Development Katılım Sertifikası"
+        }
+   }
+  },
+  "articles": {
+    "title": "Raporlar / Makaleler",
+    "button": "Dosyayı Aç",
+    "items": {
+        "bitirme": {
+        "title": "Bitirme Projesi - Temassız Kalp Atış Hızı Ölçme"
+        },
+        "saldiri": {
+        "title": "Web Tabanlı Saldırıları Önleme Sistemi"
+        },
+        "sorting": {
+        "title": "Sorting Algorithms: Quick Sort & Insertion Sort"
+        },
+        "rootkit": {
+        "title": "Rootkit Saldırısı Tespiti ve Önlemi"
+        }
+   }
+  },
+  "contact": {
+    "title": "İletişim",
+    "text": "Benimle iletişime geçmek istersen, aşağıdaki yolları kullanabilirsin:"
+  },
+
+  "footer": "© 2025 Ece. Tüm Hakları Saklıdır."
+}
