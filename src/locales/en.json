@@ -12,7 +12,7 @@
     "university": "Bursa Uludağ University - Computer Engineering",
     "description1": "I am passionate about web development and design. I build user-focused projects by following modern technologies. I continue to improve myself in React, JavaScript, HTML, and CSS. I also actively create designs on Canva.",
     "description2": "I am a curious developer who is open to learning and can quickly adapt to new technologies.",
-    "skillsTitle": "Technologies I Know:",
+    "skillsTitle": "Skills:",
     "downloadCV": "Download CV"
   },
   "projects": {
@@ -28,9 +28,21 @@
         "title": "I'Chef Pizza",
         "desc": "A pizza restaurant website"
       },
+      "spectra": {
+        "title": "Spectra - See You Grow",
+        "desc": "A company's website"
+      },
       "bank": {
         "title": "Bank Automation",
         "desc": "Created as a visual programming course project."
+      },
+      "bitirme": {
+        "title": "Non-Contact Heart Rate Measurement",
+        "desc": "Graduation Project"
+      },
+      "uml": {
+        "title": "Hostel Registration Automation",
+        "desc": "UML Diagram"
       }
     }
   },
@@ -69,6 +81,9 @@
         },
         "panbenPost": {
         "title": "Instagram Post"
+        },
+        "panbenStory": {
+        "title": "Instagram Story"
         },
         "korean":{
         "title": "Product Promotion"

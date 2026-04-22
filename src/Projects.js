@@ -21,11 +21,32 @@ function Projects() {
       link: "https://ichefpizza.com/ichefpizza/"
     },
     {
+      title: t("projects.items.spectra.title"),
+      desc: t("projects.items.spectra.desc"),
+      tech: ["HTML", "CSS", "JavaScript"],
+      video: process.env.PUBLIC_URL + "/Proje.mp4",
+      link: ""
+    },
+    {
       title: t("projects.items.bank.title"),
       desc: t("projects.items.bank.desc"),
       tech: ["C#"],
       img: process.env.PUBLIC_URL + "/bankaoto.png",
       link: "https://github.com/EceJiltaa/Bank_Automation.git"
+    },
+    {
+      title: t("projects.items.bitirme.title"),
+      desc: t("projects.items.bitirme.desc"),
+      tech: ["python"],
+      img: process.env.PUBLIC_URL + "/ecebitirme.png",
+      link: ""
+    },
+    {
+      title: t("projects.items.uml.title"),
+      desc: t("projects.items.uml.desc"),
+      tech: ["StarUML"],
+      img: process.env.PUBLIC_URL + "/pansiyonKayitUMLDiyagrami.png",
+      link: ""
     }
   ];
 

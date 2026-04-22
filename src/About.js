@@ -2,8 +2,16 @@ import React from 'react';
 import './About.css';
 import { useTranslation } from 'react-i18next';
 
+
 function About() {
   const { t } = useTranslation();
+  const { i18n } = useTranslation();
+
+  const isTurkish = i18n.language.startsWith("tr");
+
+  const cvFile = isTurkish
+    ? "/EceJilta_CV_TR.pdf"
+    : "/EceJilta_CV_EN.pdf";
 
   return (
     <div className="about-section">
@@ -26,21 +34,36 @@ function About() {
           <h4>{t("about.skillsTitle")}</h4>
 
           <ul className="skills">
-            <li>💻 HTML</li>
-            <li>💻 Python</li>
-            <li>💻 C#</li>
-            <li>🎨 CSS</li>
-            <li>⚛️ React</li>
-            <li>🧠 JavaScript</li>
-            <li>💡 Canva</li>
-            <li>💡 Figma</li>
-            <li>🔧 Git & GitHub</li>
-            <li> 🖹 Microsoft Office </li>
+                <li>💻 HTML</li>
+                <li>🎨 CSS</li>
+                <li>🧠 JavaScript</li>
+                <li>⚛️ React</li>
+                <li>📱 Responsive Design</li>
+                <li>💻 Python</li>
+                <li>💻 C#</li>
+                <li>🛢️ MySQL</li>
+                <li>🧪 Testing</li>
+                <li>🔧 Git & GitHub</li>
+                <li>💡 WordPress</li>
+                <li>🧑‍💻 VS Code</li>
+                <li>🧑‍💻 VS</li>
+                <li>📋 Jira</li>
+                <li>💡 Canva</li>
+                <li>💡 Web Design</li>
+                <li>💡 Visual Design</li>
+                <li>🎬 Video Editing</li>
+                <li>💡 User Interface Design</li>
+                <li>🧩 Template & Document Design </li>
+                <li>🧾 Documentation</li>
+                <li>🎯 Problem Solving</li>
+                <li>🔍 Attention to Detail</li>
+                <li>⌨️ Data Entry</li>
+                <li>🤝 Teamwork</li>
           </ul>
 
           <a 
-            href={process.env.PUBLIC_URL + "/EceJilta_CV_TR.pdf"} 
-            download="EceJilta_CV_TR.pdf" 
+            href={process.env.PUBLIC_URL + cvFile}
+            download
             className="cv-button"
           >
             {t("about.downloadCV")}

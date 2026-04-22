@@ -12,7 +12,7 @@
     "university": "Bursa Uludağ Üniversitesi - Bilgisayar Mühendisliği",
     "description1": "Web geliştirme ve tasarım tutkunu biriyim. Modern teknolojileri takip ederek kullanıcı odaklı projeler üretiyorum. React, JavaScript, HTML ve CSS alanlarında kendimi geliştirmeye devam ediyorum. Ayrıca aktif olarak Canva'da tasarımlar yapıyorum.",
     "description2": "Öğrenmeye açık, meraklı ve yeni teknolojilere hızlı uyum sağlayabilen bir geliştiriciyim.",
-    "skillsTitle": "Bildiğim Teknolojiler:",
+    "skillsTitle": "Yetenekler:",
     "downloadCV": "CV'mi İndir"
   },
   "projects": {
@@ -28,9 +28,21 @@
         "title": "I'Chef Pizza",
         "desc": "Bir pizza restoranının web sitesi"
       },
+      "spectra": {
+        "title": "Spectra - See You Grow",
+        "desc": "Bir şirketin web sitesi"
+      },
       "bank": {
         "title": "Banka Otomasyonu",
         "desc": "Görsel Programlama dersi projesi olarak yapılmıştır."
+      },
+      "bitirme": {
+        "title": "Temassız Kalp Atış Hızı Ölçme",
+        "desc": "Bitirme Projesi"
+      },
+      "uml": {
+        "title": "Pansiyon Kayıt Otomasyonu",
+        "desc": "UML Diyagramı"
       }
     }
   },
@@ -69,6 +81,9 @@
         },
         "panbenPost": {
         "title": "Instagram Post"
+        },
+        "panbenStory": {
+        "title": "Instagram Story"
         },
         "korean":{
         "title": "Ürün Tanıtım"

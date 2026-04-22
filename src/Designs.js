@@ -20,6 +20,24 @@ function Designs() {
       description: ""
     },
     {
+      title: t("designs.items.pizza.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/FreeFastDelivery.jpeg",
+      description: ""
+    },
+    {
+      title: t("designs.items.pizza.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/FresketNxehteShijshme.jpeg",
+      description: ""
+    },
+    {
+      title: t("designs.items.pizza.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/IChefSearch.jpeg",
+      description: ""
+    },
+    {
       title: t("designs.items.video.title"),
       type: "video",
       src: process.env.PUBLIC_URL + "/VisualDesigner.mp4",
@@ -29,6 +47,12 @@ function Designs() {
       title: t("designs.items.flower.title"),
       type: "image",
       src: process.env.PUBLIC_URL + "/flowerbag.png",
+      description: ""
+    },
+    {
+      title: t("designs.items.flower.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/PanbenPostYellowBag.jpeg",
       description: ""
     },
     {
@@ -47,6 +71,12 @@ function Designs() {
       title: t("designs.items.pizza.title"),
       type: "image",
       src: process.env.PUBLIC_URL + "/IftarMenu.png",
+      description: ""
+    },
+    {
+      title: t("designs.items.panbenStory.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/PanbenStoryJapaneseBag.jpeg",
       description: ""
     },
     {
