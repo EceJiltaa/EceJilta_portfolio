@@ -74,6 +74,12 @@ function Designs() {
       description: ""
     },
     {
+      title: t("designs.items.pizza.title"),
+      type: "image",
+      src: process.env.PUBLIC_URL + "/ShijoShiunMeIChef.jpeg",
+      description: ""
+    },
+    {
       title: t("designs.items.panbenStory.title"),
       type: "image",
       src: process.env.PUBLIC_URL + "/PanbenStoryJapaneseBag.jpeg",
