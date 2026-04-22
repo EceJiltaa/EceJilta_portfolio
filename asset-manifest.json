@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/EceJilta_portfolio/static/css/main.307b712f.css",
-    "main.js": "/EceJilta_portfolio/static/js/main.80866173.js",
+    "main.js": "/EceJilta_portfolio/static/js/main.79140cb2.js",
     "index.html": "/EceJilta_portfolio/index.html",
     "main.307b712f.css.map": "/EceJilta_portfolio/static/css/main.307b712f.css.map",
-    "main.80866173.js.map": "/EceJilta_portfolio/static/js/main.80866173.js.map"
+    "main.79140cb2.js.map": "/EceJilta_portfolio/static/js/main.79140cb2.js.map"
   },
   "entrypoints": [
     "static/css/main.307b712f.css",
-    "static/js/main.80866173.js"
+    "static/js/main.79140cb2.js"
   ]
 }
